@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "type": "crítico",
+    "title": "Acidente na Av. Brasil",
+    "description": "Colisão entre dois veículos bloqueando a faixa da esquerda. Lentidão no local.",
+    "category": ["Trânsito", "Acidente"],
+    "timestamp": "Agora",
+    "position": [-23.5615, -46.6550]
+  },
+  {
+    "id": 2,
+    "type": "atenção",
+    "title": "Chuva intensa via satélite",
+    "description": "Núcleo de chuva forte se aproximando da região central. Risco de alagamento.",
+    "category": ["Clima", "Satélite"],
+    "timestamp": "Há 15 min",
+    "position": [-23.5400, -46.6300]
+  },
+  {
+    "id": 3,
+    "type": "informativo",
+    "title": "Ônibus 483 com atraso",
+    "description": "O ônibus da linha 483 está operando com 12 minutos de atraso devido ao trânsito na via.",
+    "category": ["Transporte"],
+    "timestamp": "Há 32 min",
+    "position": [-23.5550, -46.6400]
+  }
+]

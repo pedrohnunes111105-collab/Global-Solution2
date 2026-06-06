@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-primary: #0B1028;
+    --color-bg-secondary: #1A2A4F;
+    --color-accent: #2F3C7E;
+    --color-highlight: #A6B6FF;
+    --color-text-light: #F2E8C9;
+  }
+
+  body {
+    @apply bg-[var(--color-bg-primary)] text-[var(--color-text-light)] font-sans antialiased;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+}

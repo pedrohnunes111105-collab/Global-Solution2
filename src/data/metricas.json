@@ -1,0 +1,13 @@
+{
+  "cards": {
+    "indiceTransito": { "value": "74%", "trend": { "value": "+5%", "label": "vs ontem", "isPositive": false } },
+    "alertasAtivos": { "value": "3", "trend": { "value": "-2", "label": "vs última hora", "isPositive": true } },
+    "tempoEstimado": { "value": "38 min", "trend": { "value": "+12 min", "label": "atraso na rota", "isPositive": false } },
+    "chuvaPrevista": { "value": "82%", "trend": { "value": "alta", "label": "probabilidade", "isPositive": false } }
+  },
+  "graficoFluxo": {
+    "labels": ["06h", "07h", "08h", "09h", "10h", "11h", "12h", "13h", "14h", "15h", "16h", "17h", "18h", "19h", "20h"],
+    "data": [30, 50, 85, 90, 60, 55, 75, 70, 65, 60, 75, 95, 100, 80, 50],
+    "currentHourIndex": 6
+  }
+}

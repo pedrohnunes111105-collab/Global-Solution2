@@ -1,0 +1,12 @@
+{
+  "sugerida": [
+    [-23.5505, -46.6333],
+    [-23.5550, -46.6400],
+    [-23.5615, -46.6550],
+    [-23.5700, -46.6600]
+  ],
+  "salvas": [
+    { "id": 1, "nome": "Casa → Trabalho", "origem": "Av. Paulista, 1000", "destino": "Faria Lima, 3000" },
+    { "id": 2, "nome": "Casa → Faculdade", "origem": "Av. Paulista, 1000", "destino": "Rua Maria Antonia, 294" }
+  ]
+}
