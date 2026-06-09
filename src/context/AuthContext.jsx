@@ -11,7 +11,12 @@ export const AuthProvider = ({ children }) => {
     const token = localStorage.getItem('urbanOrbit_token');
     const storedUser = localStorage.getItem('urbanOrbit_user');
     if (token && storedUser) {
-      setUser(JSON.parse(storedUser));
+      try {
+        setUser(JSON.parse(storedUser));
+      } catch {
+        localStorage.removeItem('urbanOrbit_token');
+        localStorage.removeItem('urbanOrbit_user');
+      }
     }
     setLoading(false);
   }, []);

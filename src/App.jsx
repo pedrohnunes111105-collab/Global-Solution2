@@ -13,6 +13,7 @@ import Dashboard from './pages/Dashboard';
 import Mapa from './pages/Mapa';
 import Alertas from './pages/Alertas';
 import Perfil from './pages/Perfil';
+import Relatorios from './pages/Relatorios';
 
 const PrivateRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -44,8 +45,8 @@ function AppRoutes() {
       <Route path="/alertas" element={<PrivateRoute><Alertas /></PrivateRoute>} />
       <Route path="/perfil" element={<PrivateRoute><Perfil /></PrivateRoute>} />
       
-      {/* Rota para Relatórios apenas visual */}
-      <Route path="/relatorios" element={<PrivateRoute><div className="text-white">Página de relatórios em construção...</div></PrivateRoute>} />
+      {/* Relatórios */}
+      <Route path="/relatorios" element={<PrivateRoute><Relatorios /></PrivateRoute>} />
       
       {/* Redirect de qualquer rota não encontrada para a Home */}
       <Route path="*" element={<Navigate to="/" />} />

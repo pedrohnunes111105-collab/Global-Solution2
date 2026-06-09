@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { Globe, Smartphone } from 'lucide-react'; // Trocado para ícones seguros
+import loginBg from '../assets/login-bg.png';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -23,8 +24,16 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-[calc(100vh-64px)] bg-[var(--color-bg-primary)] flex items-center justify-center px-4 py-12">
-      <div className="max-w-md w-full bg-[var(--color-bg-secondary)] rounded-2xl border border-[var(--color-accent)] p-8 shadow-2xl">
+    <div
+      className="min-h-[calc(100vh-64px)] flex items-center justify-center px-4 py-12"
+      style={{
+        backgroundImage: `url(${loginBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="max-w-md w-full rounded-2xl border border-[var(--color-accent)] p-8 shadow-2xl" style={{ background: 'rgba(15, 15, 30, 0.85)', backdropFilter: 'blur(16px)' }}>
         <div className="text-center mb-8">
           <h2 className="text-3xl font-extrabold text-white mb-2">Bem-vindo de volta</h2>
           <p className="text-gray-400">Acesse sua conta para continuar</p>
@@ -52,7 +61,7 @@ const Login = () => {
             <div className="w-full border-t border-[var(--color-accent)]"></div>
           </div>
           <div className="relative flex justify-center text-sm">
-            <span className="px-2 bg-[var(--color-bg-secondary)] text-gray-400">ou continue com e-mail</span>
+            <span className="px-2 text-gray-400" style={{ backgroundColor: 'rgba(15, 15, 30, 0.99)' }}>ou continue com e-mail</span>
           </div>
         </div>
 
@@ -90,7 +99,7 @@ const Login = () => {
         </form>
 
         <p className="mt-6 text-center text-sm text-gray-400">
-          Não tem conta? <a href="#" className="text-[var(--color-highlight)] hover:underline font-medium">Cadastre-se</a>
+          Não tem conta? <span className="text-[var(--color-highlight)] hover:underline font-medium cursor-pointer">Cadastre-se</span>
         </p>
       </div>
     </div>

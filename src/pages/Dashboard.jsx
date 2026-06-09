@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import MetricCard from '../components/MetricCard';
 import { Activity, BellRing, Clock, CloudRain } from 'lucide-react';
@@ -6,6 +7,7 @@ import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import metricasData from '../data/metricas.json';
 import alertasData from '../data/alertas.json';
+import loginBg from '../assets/login-bg.png';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -53,7 +55,23 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto space-y-6">
+    <div className="relative min-h-[calc(100vh-64px)] overflow-hidden">
+      {/* Background image — very subtle and blurred */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: `url(${loginBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          opacity: 0.12,
+          filter: 'blur(20px)',
+          zIndex: 0,
+          pointerEvents: 'none',
+        }}
+      />
+      <div className="relative z-10 max-w-7xl mx-auto space-y-6 p-6">
       <header className="mb-8">
         <h1 className="text-3xl font-bold text-white">Bom dia, {user?.name.split(' ')[0]}</h1>
         <p className="text-gray-400">Aqui está o resumo da mobilidade na sua região hoje.</p>
@@ -113,10 +131,11 @@ const Dashboard = () => {
               </div>
             ))}
           </div>
-          <button className="w-full mt-6 py-2 text-sm text-[var(--color-highlight)] hover:text-white transition-colors">
+          <Link to="/alertas" className="block w-full mt-6 py-2 text-sm text-center text-[var(--color-highlight)] hover:text-white transition-colors">
             Ver todos os alertas →
-          </button>
+          </Link>
         </div>
+      </div>
       </div>
     </div>
   );

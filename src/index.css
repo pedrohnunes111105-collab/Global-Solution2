@@ -16,3 +16,19 @@
     min-height: 100vh;
   }
 }
+
+@media print {
+  nav, aside, .print\:hidden {
+    display: none !important;
+  }
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AlertCard from '../components/AlertCard';
 import alertasData from '../data/alertas.json';
 import { Filter } from 'lucide-react';
+import loginBg from '../assets/login-bg.png';
 
 const Alertas = () => {
   const [activeFilter, setActiveFilter] = useState('Todos');
@@ -15,7 +16,22 @@ const Alertas = () => {
   });
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="relative min-h-[calc(100vh-64px)] overflow-hidden">
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: `url(${loginBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          opacity: 0.12,
+          filter: 'blur(20px)',
+          zIndex: 0,
+          pointerEvents: 'none',
+        }}
+      />
+      <div className="relative z-10 max-w-4xl mx-auto p-6">
       <header className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold text-white mb-2">Central de Alertas</h1>
@@ -59,6 +75,7 @@ const Alertas = () => {
             <p className="text-gray-400">Nenhum alerta encontrado para este filtro.</p>
           </div>
         )}
+      </div>
       </div>
     </div>
   );

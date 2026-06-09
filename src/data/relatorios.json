@@ -1,0 +1,63 @@
+{
+  "hoje": {
+    "cards": {
+      "deslocamentos": { "valor": 8, "tag": "+3 vs ontem", "tipo": "positivo" },
+      "tempoMedio": { "valor": "38 min", "tag": "-2 min vs média", "tipo": "positivo" },
+      "alertas": { "valor": 5, "tag": "1 crítico", "tipo": "atencao" },
+      "ocorrencias": { "valor": 2, "tag": "1 pendente", "tipo": "atencao" }
+    },
+    "fluxo": {
+      "labels": ["06h", "08h", "10h", "12h", "14h", "16h", "18h", "20h", "22h"],
+      "data": [15, 72, 58, 45, 52, 68, 90, 60, 25]
+    },
+    "ocorrencias": [
+      { "data": "09/06", "tipo": "Acidente", "local": "Av. Brasil", "gravidade": "Crítico", "status": "Resolvido" },
+      { "data": "09/06", "tipo": "Alagamento", "local": "R. das Flores", "gravidade": "Atenção", "status": "Ativo" }
+    ]
+  },
+  "semana": {
+    "cards": {
+      "deslocamentos": { "valor": 34, "tag": "+12% vs semana anterior", "tipo": "positivo" },
+      "tempoMedio": { "valor": "41 min", "tag": "+5 min vs média", "tipo": "atencao" },
+      "alertas": { "valor": 18, "tag": "4 críticos", "tipo": "critico" },
+      "ocorrencias": { "valor": 7, "tag": "2 pendentes", "tipo": "atencao" }
+    },
+    "fluxo": {
+      "labels": ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"],
+      "data": [62, 78, 71, 85, 90, 45, 38]
+    },
+    "ocorrencias": [
+      { "data": "09/06", "tipo": "Acidente", "local": "Av. Brasil", "gravidade": "Crítico", "status": "Resolvido" },
+      { "data": "09/06", "tipo": "Alagamento", "local": "R. das Flores", "gravidade": "Atenção", "status": "Ativo" },
+      { "data": "08/06", "tipo": "Buraco na via", "local": "Av. Paulista", "gravidade": "Baixo", "status": "Pendente" },
+      { "data": "08/06", "tipo": "Acidente", "local": "R. Augusta", "gravidade": "Crítico", "status": "Resolvido" },
+      { "data": "07/06", "tipo": "Chuva intensa", "local": "Centro", "gravidade": "Atenção", "status": "Resolvido" },
+      { "data": "07/06", "tipo": "Bloqueio de via", "local": "Av. Faria Lima", "gravidade": "Baixo", "status": "Ativo" },
+      { "data": "06/06", "tipo": "Acidente", "local": "Marginal Tietê", "gravidade": "Crítico", "status": "Resolvido" }
+    ]
+  },
+  "mes": {
+    "cards": {
+      "deslocamentos": { "valor": 142, "tag": "+8% vs mês anterior", "tipo": "positivo" },
+      "tempoMedio": { "valor": "39 min", "tag": "-1 min vs média", "tipo": "positivo" },
+      "alertas": { "valor": 67, "tag": "12 críticos", "tipo": "critico" },
+      "ocorrencias": { "valor": 28, "tag": "5 pendentes", "tipo": "critico" }
+    },
+    "fluxo": {
+      "labels": ["Sem 1", "Sem 2", "Sem 3", "Sem 4"],
+      "data": [68, 74, 81, 72]
+    },
+    "ocorrencias": [
+      { "data": "09/06", "tipo": "Acidente", "local": "Av. Brasil", "gravidade": "Crítico", "status": "Resolvido" },
+      { "data": "09/06", "tipo": "Alagamento", "local": "R. das Flores", "gravidade": "Atenção", "status": "Ativo" },
+      { "data": "08/06", "tipo": "Buraco na via", "local": "Av. Paulista", "gravidade": "Baixo", "status": "Pendente" },
+      { "data": "08/06", "tipo": "Acidente", "local": "R. Augusta", "gravidade": "Crítico", "status": "Resolvido" },
+      { "data": "07/06", "tipo": "Chuva intensa", "local": "Centro", "gravidade": "Atenção", "status": "Resolvido" },
+      { "data": "07/06", "tipo": "Bloqueio de via", "local": "Av. Faria Lima", "gravidade": "Baixo", "status": "Ativo" },
+      { "data": "06/06", "tipo": "Acidente", "local": "Marginal Tietê", "gravidade": "Crítico", "status": "Resolvido" },
+      { "data": "05/06", "tipo": "Semáforo apagado", "local": "R. Consolação", "gravidade": "Atenção", "status": "Resolvido" },
+      { "data": "04/06", "tipo": "Deslizamento", "local": "Serra da Cantareira", "gravidade": "Crítico", "status": "Resolvido" },
+      { "data": "03/06", "tipo": "Alagamento", "local": "Av. do Estado", "gravidade": "Atenção", "status": "Pendente" }
+    ]
+  }
+}
